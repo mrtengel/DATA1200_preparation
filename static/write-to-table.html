@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DATA1200 simple introduction to webdesign</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/basics.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Frontpage</a>
+          <a href="input-fields.html">Add text</a>
+          <a class="active" href="write-to-table.html">Fill table</a>
+        </div>
+      </div>
+    </header>
+<main>
+    <h1>Introduction: A title</h1>
+    <h2>Sub-heading: One of several</h2>
+    <p>This is a pragraph, plain and simple.</p>
+    <p class="grey-bold-txt">This is a pragraph, but with class "grey-bold-txt".</p>
+<button onclick="winners()">Winners 2022</button>
+    <h3>Medalists</h3>
+<table style="min-width: 400px;">
+    <caption>Medalists, names and teams</caption>
+    <tr>
+        <td></td>
+        <th scope="col">Name</th>
+        <th scope="col">Team</th>
+    </tr>
+    <tr>
+        <th scope="row">1st place</th>
+        <td id="first-place-name"></td>
+        <td id="first-place-team"></td>
+    </tr>
+    <tr>
+        <th scope="row">2nd place</th>
+        <td id="second-place-name"></td>
+        <td id="second-place-team"></td>
+    </tr>
+    <tr>
+        <th scope="row">3rd place</th>
+        <td id="third-place-name"></td>
+        <td id="third-place-team"></td>
+    </tr>
+</table>
+</main>
+</body>
+</html>

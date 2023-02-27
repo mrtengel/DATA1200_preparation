@@ -18,7 +18,7 @@ function printAge() {
 let celcius = document.getElementById('celcius').value;
 let farenheit = document.getElementById('farenheit').value;
 
-let fConverted = (celcius * (9/5) + 32);
+let fConverted = (celcius *(9/5)+32);
 let cConvert = farenheit * (5/9) - 32;
 
 function cToF() {

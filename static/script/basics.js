@@ -1,17 +1,17 @@
 let winnerList = [];
     let winner1 = {
-        name:"Tengel Sandtrø",
-        team:"Alpha"
+        name:'Ole Sneltvedt',
+        team:'Innovasjon'
     };
 
     let winner2 = {
-        name:'Klara Sandtrø',
-        team:'Beta'
+        name:'Eva Hadler Vihovde',
+        team:'Skyteknologi'
     };
 
     let winner3 = {
-        name:'Aurora Aas',
-        team:'Alpha'
+        name:'Tengel Sandtrø',
+        team:'Skyteknologi'
     };
 
 winnerList.push(winner1);

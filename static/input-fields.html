@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <script src="script/basics.js" defer></script>
+    <script src="script/input-fields.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
     <p class="grey-bold-txt">This is a pragraph, but with class "grey-bold-txt".</p>
 <button onclick="winners()">Winners 2022</button>
     <h3>Medalists</h3>
-<table style="min-width: 400px;">
+<table id="podium" style="min-width: 400px;">
     <caption>Medalists, names and teams</caption>
     <tr>
         <td></td>
@@ -34,21 +35,32 @@
     </tr>
     <tr>
         <th scope="row">1st place</th>
-        <td id="first-place-name"><input type="text" id="winner-name"/></td>
-        <td id="first-place-team"><input type="text" id="winner-team"/></td>
+        <td id="first-place-name"><input type="text" id="medalists-one-name-input"/></td>
+        <td id="first-place-team"><input type="text" id="medalists-one-Team-input"/></td>
     </tr>
     <tr>
         <th scope="row">2nd place</th>
-        <td id="second-place-name"><input type="text" id="second-name"/></td>
-        <td id="second-place-team"><input type="text" id="second-team"/></td>
+        <td id="second-place-name"><input type="text" id="medalists-two-name-input"/></td>
+        <td id="second-place-team"><input type="text" id="medalists-two-team-input"/></td>
     </tr>
     <tr>
         <th scope="row">3rd place</th>
-        <td id="third-place-name"><input type="text" id="third-name"/></td>
-        <td id="third-place-team"><input type="text" id="third-team"/></td>
+        <td id="third-place-name"><input type="text" id="medalists-three-name-input"/></td>
+        <td id="third-place-team"><input type="text" id="medalists-three-team-input"/></td>
     </tr>
 </table>
-<button name="Winner" onclick="winner">Get winner name (and team)</button>
-<h2 name="reveal-winner">(Winner)</h2>
+<button id="winner" onclick="printMedalists();">Get winner name (and team)</button>
+<h2>(Medalists)</h2>
+<div id="reveal-places">
+
+</div>
+
+<h2>Simplified</h2>
+<div id="winner-name">
+<p>(Her kommer vinneren til å bli publisert)</p>
+</div>
+<input type="text" id="winner-input" />
+<button id="print-winner" onclick="printWinnername();">Move Winner Name</button>
+
 </body>
 </html>

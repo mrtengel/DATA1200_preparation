@@ -1,11 +1,9 @@
 * {margin-left: 10px;    /* Simple visual improvement in my eyes */
 }
 
-.grey-bold-txt { /* Just to show an example of class */
-    font-weight: bold;
-    color: darkgrey;
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 caption {
     font-size: larger;
     font-weight: bold;
@@ -17,6 +15,23 @@ table {
     border-width: 1px;
     border-style: dotted;
     text-align: left;
+}
+
+code {
+  margin-left: 0em;
+}
+
+.grey-bold-txt { /* Just to show an example of class */
+  font-weight: bold;
+  color: darkgrey;
+}
+
+#courier-font { /* Just to show an example of id for styling */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#first-place-name, #first-place-team {
+  background-color: coral;
 }
 
 /** Example used at w3Schools, but there are several **/

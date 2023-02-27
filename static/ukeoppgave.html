@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DATA1700-examples</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/basics.js" defer></script>
+    <script src="script/week1700.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a class="active" href="index.html">Frontpage</a>
+                <a href="selectors.html">Selectors</a>
+                <a href="input-fields.html">Add text</a>
+                <a href="write-to-table.html">Fill table</a>
+            </div>
+        </div>
+        </header>
+<!-- Can I reuse Week-assignments from DATA1700 in DATA1200?? -->
+<p> Please enter your name:</p>
+    <input type="text" id="full-name" placeholder="Enter full name" onchange="printName()" />
+    
+<p> Please enter your age in years:</p>
+   <input type="text" id="age" placeholder="Enter your age" />
+<p>Thank you</p>
+   <div id="name-print"></div>
+<p>Now, please check your name before you submit.</p>
+   <div id="age-print"></div>
+<button onclick="printAge()">Check Age</button>
+
+<hr />
+<table>
+    <tr>
+        <th scope="col">Celcius</th>
+        <th scope="col">Farenheit</th>
+    </tr>
+    <tr>
+        <td><input id="celcius"></td>
+        <td><input id="farenheit"></td>
+    </tr>
+    <tr>
+        <td><button onclick="cToF">Convert to Farenheit</button></td>
+        <td><button onclick="fToC">Convert to Celcius</button></td>
+    </tr>
+</table>
+<div id="celciusPrint"></div>
+<div id="farenheitPrint"></div>
+
+</body>
+</html>

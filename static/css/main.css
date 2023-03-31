@@ -1,0 +1,85 @@
+* {margin-left: 10px;    /* Simple visual improvement in my eyes */
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+caption {
+    font-size: larger;
+    font-weight: bold;
+    color: #009900;
+}
+
+table {
+    border-color: grey;
+    border-width: 1px;
+    border-style: dotted;
+    text-align: left;
+}
+
+code {
+  margin-left: 0em;
+}
+
+.grey-bold-txt { /* Just to show an example of class */
+  font-weight: bold;
+  color: darkgrey;
+}
+
+#courier-font { /* Just to show an example of id for styling */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#first-place-name, #first-place-team {
+  background-color: coral;
+}
+
+/** Example used at w3Schools, but there are several **/
+/** https://www.w3schools.com/howto/howto_css_dropdown.asp **/
+/** "active" added, but else kept verbatim **/
+
+.dropdown a.active {
+    color: grey;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}

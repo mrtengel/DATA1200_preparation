@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DATA1200 simple introduction to webdesign</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/basics.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Frontpage</a>
+          <a href="selectors.html">Selectors</a>
+          <a href="input-fields.html">Add text</a>
+          <a class="active" href="write-to-table.html">Fill table</a>
+        </div>
+      </div>
+    </header>
+<main>
+    <h1>Why "id" should be unique</h1>
+    <p>Usually, we don't use <code>id</code>-s for styling, we use classes. However, sometimes we have elements that are given an '<code>id</code>' and wish to style it. That is of course possible! In the example below, since the winner is already identified by id (<code>&lt;td id="first-place-name"&gt;&lt;/td&gt;</code>), we can reuse this.</p>
+    <h2>Populating a list, table or any other HTML-element by ID</h2>
+    <p>This list is hard-coded. Usually, we would populate this list from a database, for example.</p>
+<button onclick="winners()">Winners 2022</button>
+    <h3>Medalists</h3>
+<table style="min-width: 400px;">
+    <caption>Medalists, names and teams</caption>
+    <tr>
+        <td></td>
+        <th scope="col">Name</th>
+        <th scope="col">Team</th>
+    </tr>
+    <tr>
+        <th scope="row">1st place</th>
+        <td id="first-place-name"></td>
+        <td id="first-place-team"></td>
+    </tr>
+    <tr>
+        <th scope="row">2nd place</th>
+        <td id="second-place-name"></td>
+        <td id="second-place-team"></td>
+    </tr>
+    <tr>
+        <th scope="row">3rd place</th>
+        <td id="third-place-name"></td>
+        <td id="third-place-team"></td>
+    </tr>
+</table>
+</main>
+</body>
+</html>

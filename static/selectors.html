@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DATA1200 Selectors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Frontpage</a>
+                <a class="active" href="selectors.html">Selectors</a>
+                <a href="input-fields.html">Add text</a>
+                <a href="write-to-table.html">Fill table</a>
+            </div>
+        </div>
+        </header>
+
+<h1>Selectors in webdesign</h1>
+    <p>We have several selectors in HTML/ CSS, and these are used by JavaScript as well. The most important are <em>class</em>, <em>id</em>, and <em>name</em>.</p>
+
+<h2>Class = Your main selector for styling in CSS</h2>
+    <p>Are you styling some — but not all — H2s? Give them a class. If you are styling <strong>all</strong> (or even the majority of) H2s, you will style that element, not add a class to every H2. If you wish to make some elements bold and grey, you can reuse a class across element types.</p>
+    <p class="grey-bold-txt">This is a pragraph, but with class "grey-bold-txt".</p>
+    <p>Example for a heading:</p>
+    <h3 class="grey-bold-txt">Just an example, not an actual sub-heading</h3>
+    <p>An example of a single <span class="grey-bold-txt">word</span> in a sentence.</p>
+    
+    <h3>JavaScript may use 'class' but usually not</h3>
+    <p>getElementByClass is a valid JavaScript command. It will of course get all HTML elements by the class specified. But as there may be multiple elements with one class, this may create ... "issues"!</p>
+
+<h2>Id = Your main selector later, when JavaScript</h2>
+    <p>Are you styling a single, unique and specific instance of an element? You may create an ID in CSS for that purpose. More often, you will create elements that you give an 'id' for use by JavaScript, and then you style them. 
+        <a href="write-to-table.html">Example of JavaScript and 'id'-s</a></p>
+</body>
+</html>

@@ -1,0 +1,175 @@
+:root {
+    --siteburgundy:rgb(130, 0, 40);
+}
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.ingress {
+    font-weight: 700;
+    color: #666666;
+}
+
+header {
+    background-color: var(--siteburgundy);
+    color: aliceblue;
+    line-height: 1.4rem;
+    font-size: 0.9em;
+}
+
+article, aside {
+    margin-left: 2rem;
+}
+
+aside {
+    background-color: rgb(240, 200, 120);
+    padding-left: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.25em;
+}
+
+aside > p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: larger;
+}
+
+
+/** GRID **/
+@media (max-width: 839px) {
+    .secondbox {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        background-image: url("../images/makerspace.jpg");
+        background-size: cover;
+        height: 90vw;
+        max-height: 60vw;
+    } 
+
+    footer > div {
+        margin-left: 2rem;
+        margin-bottom: 0.4rem;
+        padding: 0.4rem;
+        border-style: dashed;
+        font-size: smaller;
+    }
+}
+
+@media (min-width: 840px) {
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: minmax(500px, 40vw) minmax(300px, 20vw) auto;
+        grid-template-rows: minmax(100px, auto);
+    }
+
+    .mainbox {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .secondbox {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        background-image: url("../images/makerspace.jpg");
+        background-size: cover;
+        height: 40vw;
+        max-height: 300px;
+    }
+
+    aside {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: minmax(200px, 20vw) minmax(200px, 20vw) minmax(200px, 20vw) auto;
+    }
+
+    .footerleft {
+        grid-column: 1 / 2;
+        grid-row: 3;
+        padding-left: 1rem;
+    }
+
+    .footermiddle {
+        grid-column: 2 / 3;
+        grid-row: 3;
+        border-left: #666666 dashed 2px;
+        border-right: #666666 dashed 2px;
+        padding-left: 1rem;
+    }
+
+    .footerright {
+        grid-column: 3 / 4;
+        grid-row: 3;
+        padding-left: 1rem;
+    }
+
+}
+
+/** Hamburger menu **/
+
+#burger-toggle {display: none;}
+
+@media (min-width: 701px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .menu li {padding-right: 4rem;}
+}
+
+@media (max-width: 700px) {
+    .menu {
+        list-style-type: none;
+        position: sticky;
+        padding-left: 0px;
+    }
+
+    .menu-icon {
+        display: block;
+        background-image: url(../images/menu.svg);
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+
+    .hamburger-toggle-container {cursor: pointer;}
+
+    .menu li {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #burger-toggle:checked ~ .menu li {
+        height: 1rem;
+        width: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: var(--siteburgundy);
+    }
+
+    nav {
+        display: flex;
+        height: 40px;
+    }
+
+} 

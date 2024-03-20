@@ -27,6 +27,10 @@ code {
   color: darkgrey;
 }
 
+.sans {
+  font-family: "Helvetica neue", Helvetica, sans-serif;
+}
+
 #courier-font { /* Just to show an example of id for styling */
   font-family: 'Courier New', Courier, monospace;
 }
